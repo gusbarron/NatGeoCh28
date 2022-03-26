@@ -1,0 +1,49 @@
+html{
+font-size: 62.5%;
+}
+
+.table{
+border: 1px solid black;
+border-collapse: collapse;
+font-size: 1.6rem;
+}
+.tbale tr:nth-child(even){
+background-color: gray;
+}
+.table tr:hover{
+  background-color: grey;
+  color: white;
+}
+.table td, .table th{
+  border: 1px solid black;
+  width: 100px;
+  padding: 10px;
+}
+
+/*mobile view*/
+.flex-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex-child{
+  background-color: gray;
+  font-size: 2rem;
+  border: 1px solid black;
+  padding: 20px;
+  flex-basis:50px;
+  text-align: center;
+}
+
+.flex-child:hover{
+  background-color: rgb(73, 3=73, 93);
+}
+
+/*desktop view*/
+@media(main-width:768px){
+  .flex-container{
+  flex-direction: row;
+  justify-content: space-between;
+  }
+}
